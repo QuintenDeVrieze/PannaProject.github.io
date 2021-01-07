@@ -103,11 +103,42 @@ body {
     color: #fff;
     padding: 11px 16px;
     line-height: 24px;
-    width:70vw;
+    width:23vw;
     outline: none;
     border-radius: 100px;
     margin-bottom: 1em;
 }
+.btn {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-size: 18px;
+}
+  
+/* Style the active class, and buttons on mouse-over */
+.active, .btn:hover {
+    background-color: var(--third-color);
+    color: white;
+}
+
+.c-button__little {
+    font-size: 12px;
+    font-weight: 700;    
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 4px 6px;
+    line-height: 12px;
+    width:22vw;
+    outline: none;
+    border-radius: 100px;
+    margin-bottom: 1em;
+}
+.active {
+    background-color: var(--third-color);
+    color: white;
+  }
 
 .c-button__red {
     font-size: 16px;
@@ -119,6 +150,7 @@ body {
     width:70vw;
     outline: none;
     border-radius: 100px;
+    border: none;
 }
 
 
@@ -140,6 +172,7 @@ body {
     padding: 3% 14%;
     border-radius: 25px;
 }
+
 
 
 /* Dropdown Button */
@@ -254,6 +287,10 @@ body {
     justify-content: center;
 }
 
+.align-top-screen{
+    margin-top: 5em;
+}
+
 
 .container {
     display: grid;
@@ -328,8 +365,8 @@ body {
 
 .c-card {
     background-color: var(--third-color);
-    margin-left:1em;
-    margin-right: 1em;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 25px;
     margin-bottom: 2em;
     width: 70vw;
@@ -422,9 +459,34 @@ body {
 
 
 
+tbody {
+    display: block;
+    height: 50vh;
+    overflow: auto;
+    margin-top: 1em;
+}
+
+.small-table-body{
+    height: 25vh;
+    margin-bottom: 3em;
+}
 
 
-
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    
+}
+  
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    width: 80vw;
+}
+  
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
 
 
 .o-section {
@@ -549,6 +611,7 @@ padding-bottom: 16px;
         width:400px;
         outline: none;
         border-radius: 100px;
+        border: none;
     }
     .dropbtn {
         background-color: var(--main-color);
@@ -561,8 +624,8 @@ padding-bottom: 16px;
       }
     .c-card {
         background-color: var(--third-color);
-        margin-left:1em;
-        margin-right: 1em;
+        margin-left: auto;
+        margin-right: auto;
         border-radius: 25px;
         margin-bottom: 2em;
         width: 400px;
@@ -591,6 +654,18 @@ padding-bottom: 16px;
         border: none;
         border-radius: 100px;
         margin-bottom: 1em;
+    }
+    .c-button__little {
+        font-size: 12px;
+        font-weight: 700;    
+        background-color: var(--main-color);
+        color: #fff;
+        padding: 11px 16px;
+        line-height: 12px;
+        width:133px;
+        outline: none;
+        border-radius: 100px;
+        margin-bottom: 2em;
     }
     
 }
